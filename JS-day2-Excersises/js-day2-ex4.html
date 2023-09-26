@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <select id="car-selector">
+    <select id="car-selector" onchange="showSelected()">
       <!-- Options will be populated by JavaScript -->
     </select>
     <h2>Selected Brand</h2>
@@ -18,7 +18,7 @@
 
     <div style="border: 1px solid black; border-radius: 5px;padding: 1em;">
       <h3>Reflections</h3>
-      <p>Its useful to use the selector when prompting a user and they dont need to place an input</p>
+      <p>Its useful to use the selector when prompting a user and they dont need to place an input and used "onchange" on the HTML element to update the value.</p>
     </div>
 
     <script>
