@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Exercise-1</h1>
+    <div id="d1" style="width: 100px; margin: 1px">&nbsp;</div>
+    <div id="d2" style="width: 100px; margin: 1px">&nbsp;</div>
+    <div id="d3" style="width: 100px; margin: 1px">&nbsp;</div>
+    <button onclick="changeColor()">Change color</button>
+
+    <div style="border: 1px solid black; border-radius: 5px;padding: 1em;">
+      <h3>Reflections</h3>
+      <p>In this solution i've iterated through the divs and assigning colors.
+        I was able to use foreach and querySelectorAll to manipulate the DOM-Elements.
+      </p>
+    </div>
+
+    <div style="margin: 1em">
+        <a href="/index.html">Back</a>
+    </div>
+    
+    <script>
+        document.querySelectorAll("div").forEach((div) => {
+            if (div.id.length > 0){
+            div.style.backgroundColor = "yellow";
+            }
+        });
+
+        function changeColor(){
+            const divs = document.querySelectorAll("div");
+            divs[0].style.backgroundColor = "Blue";
+            divs[1].style.backgroundColor = "Red";
+            divs[2].style.backgroundColor = "Green";
+        }
+    </script>
+  </body>
+</html>
